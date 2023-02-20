@@ -1,0 +1,66 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{titling}
+
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
+
+\newcommand\mbb[1]{\ensuremath{\mathbb{#1}}}
+
+\runningheader{CS/MATH 113}{WC07: Sets}{\theauthor}
+\runningheadrule
+\runningfootrule
+\runningfooter{}{Page \thepage\ of \numpages}{}
+
+\printanswers
+
+\title{Weekly Challenge 07: Sets\\CS/MATH 113 Discrete Mathematics}
+\author{team-name}  % <== for grading, replace with your team name, e.g. q1-team-420
+\date{Habib University | Spring 2023}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\titledquestion{Distributing over a Collection of Sets}
+  Imagine a collection, $S$, of sets. $S$ may be finite, i.e. $\exists n\in \mbb{Z}^*\ni S = \{S_0,S_1,S_2, S_3, \ldots S_n\}$, or infinite, i.e., $S = \{S_0,S_1,S_2, S_3, \ldots \}$.
+
+  $S$ can be represented with the help of an \textit{index set}, $A$, as $S = \{S_i\mid i \in A\}$. When $S$ is finite, then $A\subset \mbb{Z}^*$, otherwise $A=\mbb{Z}^*$.
+
+  Union and intersection involving collections of sets are defined as follows.
+  \begin{align*}
+    \bigcup_{i \in A}S_i = \{x\mid \exists i \in A \ni x \in S_i\}\\
+    \bigcap_{i \in A}S_i = \{x\mid\forall i \in A\; (x \in S_i)\}
+  \end{align*}
+  \begin{parts}
+  \part[5] Show that
+    \[
+      \bigcup_{i\in A}(T \cap S_i) = T \cap \left(\bigcup_{i\in A}S_i  \right).
+    \]
+  \part[5] Show that
+    \[
+      \bigcap_{i\in A}(T \cup S_i) = T \cup \left(\bigcap_{i\in A}S_i  \right).
+    \]
+  \end{parts}
+  
+  \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+
+\end{questions}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
